@@ -1,16 +1,28 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "var": {
+    "Splitter": "\\"
+  },
   "blocks": [
     {
       "alignment": "left",
       "segments": [
         {
           "foreground": "#F1FA8C",
+          "style": "plain",
+          "template": "<#42E66C>\ueaf7 </>{{if gt (len (splitList .Var.Splitter .Parent)) 2}}<b>{{index (splitList .Var.Splitter .Parent) (sub (len (splitList .Var.Splitter .Parent)) 2)}}/</b>{{else}}<b>{{ .Parent }}</b>{{end}}",
+          "type": "path",
+          "properties": {
+            "style": "folder"
+          }
+        },
+        {
+          "foreground": "#F1FA8C",
           "properties": {
             "style": "folder"
           },
           "style": "diamond",
-          "template": "<#42E66C>\ueaf7 </><b>{{ .Path }}</b>",
+          "template": "<b>{{ .Path }}</b>",
           "type": "path"
         },
         {
