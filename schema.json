@@ -41,7 +41,7 @@
         {
           "foreground": "#FFFFFF",
           "style": "plain",
-          "template": "$",
+          "template": "$ ",
           "type": "text"
         }
       ],
