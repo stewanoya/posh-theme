@@ -25,7 +25,7 @@
         {
           "foreground": "#ff0000",
           "style": "diamond",
-          "template": "<#ff0000> \u25C9</>",
+          "template": "<#ff0000> \u25C9</> ",
           "type": "text"
         }
       ],
@@ -38,7 +38,7 @@
         {
           "foreground": "#FFFFFF",
           "style": "plain",
-          "template": "&nbsp;>",
+          "template": ">",
           "type": "text"
         }
       ],
